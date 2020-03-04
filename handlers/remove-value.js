@@ -1,6 +1,10 @@
 function removeValueHandler() {
   debugger;
+<<<<<<< HEAD
   // read new value from user input
+=======
+  // read new number from user input
+>>>>>>> master
   let removeValue =  document.getElementById('input').value;
   removeValue.parentNode.removeChild(removeValue);
 }
