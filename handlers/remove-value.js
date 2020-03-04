@@ -15,4 +15,4 @@ function removeValueHandler() {
     newInput: newValue,
     numbers: JSON.parse(JSON.stringify(numbers))
   })
-}
+
