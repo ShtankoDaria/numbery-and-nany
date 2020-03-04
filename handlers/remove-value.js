@@ -1,13 +1,10 @@
-function saveNumberHandler() {
+function removeValueHandler() {
   debugger;
   // read new number from user input
-let newValue =  document.getElementById('input').value;
-//Number(document.getElementById('input').value);
-  // read from state the data you will need for the next step
-  numbers.all.push(newValue);
-  // find the new biggest and smallest values
-  let big = Math.max(...numbers.all); 
-  let small = Math.min(...numbers.all);
+  let removeValue =  document.getElementById('input').value;
+  removeValue.parentNode.removeChild(removeValue);
+}
+
  
 
   // update state: new biggest, new smallest, new current & save the last current
