@@ -3,16 +3,15 @@ function removeValueHandler() {
 
   // read new value from user input
 
-  let removeValue =  document.getElementById('input').value;
-  removeValue.parentNode.removeChild(removeValue);
+  let newValue =  document.getElementById('input').value;
+  newValue.parentNode.removeChild(newValue);
 }
 
  
 
   // log user interaction: handler name, user input, new state
   log.push({
-    handler: 'save number',
-    newInput: newValue,
-    numbers: JSON.parse(JSON.stringify(numbers))
-  })
-
+    handler: "removeValueHandler",
+    newValue,
+    entries: JSON.parse(JSON.stringify(entries))
+  });

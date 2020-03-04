@@ -8,7 +8,7 @@ function resetHandler() {
  
   // log interaction: handler name, new state
   log.push({
-    handler: 'reset',
+    handler: 'resetHandler',
     numbers: JSON.parse(JSON.stringify(entries))
   })
 

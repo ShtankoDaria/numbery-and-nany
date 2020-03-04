@@ -28,8 +28,7 @@ else {
 
   // log user interaction: handler name, user input, new state
   log.push({
-    handler: 'saveValue',
-    newInput: newValue,
-    numbers: JSON.parse(JSON.stringify(entries))
-  })
-}
+    handler: "saveValueHandler",
+    newValue,
+    entries: JSON.parse(JSON.stringify(entries))
+  });
