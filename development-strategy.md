@@ -4,33 +4,33 @@ Building this site one step at a time
 
 ## 0. Setup
 
-> * What files do you need to create?
-> * What are you putting in each file?
+> * Need to create Index, Handlers folder (Remove Value, Save value, Reset), Listeners folder (Remove Value, Save value, Reset), init file, style file
+> * In index core HTML
+  * In Handlers core logic for Remove, Save and Reset the value
+  * In Listeners code to listen the event when buttons for "Save", "Remove", "Reset" are clciked
 
 ## 1. Data & Log
 
-> * which files of code do you need to create/change?
-> * what are you changing in each file?
+> * Create a log file
+> * Added log 
 
 ## 2. Init
 
-> * which files of code do you need to change?
-> * what are you changing in them?
+> * Created Init file
+> * window.onload
 
-## 3. User Story: ___
+## 3. User Story: Save
 
-> * which user story makes sense to code first?
-> * which files of code do you need to change?
-> * what are you changing in them?
+> * Save number to be coded first
+> * Handler Save Value
+> * Add logic to read inputs and save numbers to Numbers and NaNs respectively
 
-## 4. User Story: ___
+## 4. User Story: Remove
+> * Remove number to be coded after
+> * Handler Remove Value
+> * Add logic to read inputs and remove duplicated values from Numbers and NaNs respectively
 
-> * which user story makes sense to code first?
-> * which files of code do you need to change?
-> * what are you changing in them?
-
-## 5. User Story: ___
-
-> * which user story makes sense to code first?
-> * which files of code do you need to change?
-> * what are you changing in them?
+## 4. User Story: Reset
+> * Remove number to be coded after
+> * Handler Reset
+> * Add logic to rest all the inputs
