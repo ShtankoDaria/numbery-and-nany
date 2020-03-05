@@ -14,8 +14,8 @@ function saveValueHandler() {
   } else {
     // Create Number list
     let numberList = document.getElementById("Numbery");
-    entries.numbery.push(numberList);
     const ulEl = document.createElement("li");
+    entries.numbery.push(newValue);
     ulEl.innerText = newValue;
     numberList.appendChild(ulEl);
   }
