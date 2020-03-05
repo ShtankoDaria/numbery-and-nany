@@ -7,16 +7,14 @@ function saveValueHandler() {
   if (isNaN(newInput)) {
     //Create NaN list
     let notNumberList = document.getElementById("Nany");
-    const ulEl = notNumberList.children[0];
     const ulEl = document.createElement("li");
-    entries.nany.push(notNumberList);
+    entries.nany.push(newValue);
     ulEl.innerText = newValue;
     notNumberList.appendChild(ulEl);
   } else {
     // Create Number list
     let numberList = document.getElementById("Numbery");
     entries.numbery.push(numberList);
-    const ulEl = numberList.children[0];
     const ulEl = document.createElement("li");
     ulEl.innerText = newValue;
     numberList.appendChild(ulEl);
