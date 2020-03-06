@@ -5,12 +5,31 @@ function removeValueHandler() {
   
   let newValue =  document.getElementById('input').value;
   let newInput = Number(newValue);
-
+  
   //Check if input is NaN or not
   if (isNaN(newInput)) {
-   
-    //Create NaN list
-   /* if (entries.nany.includes(newValue)) {
+   let index = '';
+   if (entries.nany.includes(newValue)){
+     //let unique = [];
+     index = entries.nany.indexOf(newValue);
+     let unique = entries.nany.splice(index,1);
+   }
+   let notNumberList = document.getElementById("Nany");
+   notNumberList.removeChild(notNumberList.children[index]);
+  }
+  else {
+    let index = '';
+    if (entries.numbery.includes(newValue)){
+      index = entries.numbery.indexOf(newValue);
+      let unique = entries.numbery.splice(index,1);
+    }
+    let numberList = document.getElementById("Numbery");
+    numberList.removeChild(numberList.children[index]);
+   }
+     
+  
+
+ /* if (entries.nany.includes(newValue)) {
       const valueRemove = entries.nany.indexOf(newValue);
       entries.nany.splice(indexRemove, 1);
       let notNumberList = document.getElementById("Nany");
@@ -27,33 +46,8 @@ unique.push(newValue[i])
 }
 return unique;
    */
-  let valRemove = entries.nany.indexOf(newValue);
-  entries.nany.splice(valRemove, 1);
 
-   let notNumberList = document.getElementById("Nany");
-   for (let i = 0; i < notNumberList.children.length; i++) {
-     if (notNumberList.children[i].innerText === newValue) {
-      notNumberList.removeChild(notNumberList.children[i]);
-   
-     }
-   }
-   document.getElementById("input").value = "";
-  }
-  else{
-  let valRemove = entries.nany.indexOf(newValue);
-  entries.numbery.splice(valRemove, 1);
 
-  let numberList = document.getElementById("Numbery");
-
-   for (let i = 0; i < numberList.children.length; i++) {
-     if (numberList.children[i].innerText === newValue) {
-      numberList.removeChild(numberList.children[i]);
-   
-     }
-   }
-   document.getElementById("input").value = "";
-  }
-  // log user interaction: handler name, user input, new state
   log.push({
     handler: "removeValueHandler",
     newValue,
